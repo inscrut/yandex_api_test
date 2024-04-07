@@ -1,0 +1,5 @@
+tokens.json
+settings.json
+*.pem
+*.pyc
+*.log

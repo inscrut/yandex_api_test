@@ -1,0 +1,78 @@
+{
+    "devices": [
+        {
+            "id": "ESP32-board",
+            "name": "Эспрессиф",
+            "description": "Отладочная плата",
+            "room": "Гостиная",
+            "type": "devices.types.light",
+            "custom_data": {
+                "voltage": "3.3V"
+            },
+            "capabilities": [
+                {
+                    "type": "devices.capabilities.on_off",
+                    "retrievable": true,
+                    "state": {
+                        "instance": "on",
+                        "value": false,
+                        "action_result": {
+                            "status": "DONE"
+                        }
+                    }
+                }
+            ],
+            "properties": [],
+            "device_info": {
+                "manufacturer": "Espressif",
+                "model": "ESP32",
+                "hw_version": "v1.0",
+                "sw_version": "v1.0"
+            }
+        },
+        {
+            "id": "Arduino-board",
+            "name": "Ардуино",
+            "description": "Отладочная плата",
+            "room": "Гостиная",
+            "type": "devices.types.light",
+            "custom_data": {
+                "voltage": "5V"
+            },
+            "capabilities": [
+                {
+                    "type": "devices.capabilities.on_off",
+                    "retrievable": true,
+                    "state": {
+                        "instance": "on",
+                        "value": false,
+                        "action_result": {
+                            "status": "DONE"
+                        }
+                    }
+                },
+                {
+                    "type": "devices.capabilities.range",
+                    "retrievable": true,
+                    "parameters": {
+                        "instance": "brightness",
+                        "random_access": true,
+                        "range": {
+                            "max": 100,
+                            "min": 1,
+                            "precision": 1
+                        },
+                        "unit": "unit.percent"
+                    }
+                }
+            ],
+            "properties": [],
+            "device_info": {
+              "manufacturer": "Arduino",
+              "model": "Uno",
+              "hw_version": "R3",
+              "sw_version": "v1.0"
+            }
+        }
+    ]
+}
